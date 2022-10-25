@@ -3,3 +3,8 @@ zone "c01.com" {
     masters { 10.10.3.2; };
     file "/var/lib/bind/c01.com";
 };
+
+zone "operation.wise.c01.com" {
+    type master;
+    file "/etc/bind/delegasi/operation.wise.c01.com";
+};
