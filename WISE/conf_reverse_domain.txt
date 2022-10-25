@@ -1,0 +1,10 @@
+$TTL    604800
+@       IN      SOA     c01.com. root.c01.com. (
+                     2022100601         ; Serial
+                         604800         ; Refresh
+                          86400         ; Retry
+                        2419200         ; Expire
+                         604800 )       ; Negative Cache TTL
+;
+2.10.10.in-addr.arpa.           IN      NS          c01.com.
+3                               IN      PTR         c01.com.

@@ -5,3 +5,8 @@ zone "c01.com" {
     allow-transfer { 10.10.2.2; };
     file "/etc/bind/jarkom/c01.com";
 };
+
+zone "2.10.10.in-addr.arpa" {
+    type master;
+    file "/etc/bind/jarkom/2.10.10.in-addr.arpa";
+};
