@@ -1,0 +1,7 @@
+zone "c01.com" {
+    type master;
+    notify yes;
+    also-notify { 10.10.2.2; };
+    allow-transfer { 10.10.2.2; };
+    file "/etc/bind/jarkom/c01.com";
+};
