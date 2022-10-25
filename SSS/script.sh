@@ -8,5 +8,5 @@ wait
 apt-get install lynx -y
 wait
 
-apt-get install dnsutils
+apt-get install dnsutils -y
 wait

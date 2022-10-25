@@ -10,6 +10,7 @@ cat /root/conf_domain.txt > /etc/bind/named.conf.local
 
 mkdir /etc/bind/delegasi
 cp /etc/bind/db.local /etc/bind/delegasi/operation.wise.c01.com
+cat /root/conf_bind_c01.txt > /etc/bind/delegasi/operation.wise.c01.com
 
 cat /root/conf_options.txt > /etc/bind/named.conf.options
 
