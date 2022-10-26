@@ -19,7 +19,15 @@ then
     mv /var/www/wise /var/www/wise.c01.com
 fi
 
-cat conf_apache.txt > /etc/apache2/sites-available/000-default.conf
+if [ ! -d "/var/www/eden.wise.c01.com/" ]
+then
+    wget --no-check-certificate 'https://drive.google.com/uc?export=download&id=1q9g6nM85bW5T9f5yoyXtDqonUKKCHOTV' -O eden.wise.c01.com.zip
+    unzip eden.wise.c01.com.zip -d /var/www/
+    mv /var/www/eden.wise /var/www/eden.wise.c01.com
+fi
+
+touch /etc/apache2/sites-available/wise.c01.conf
+cat conf_apache.txt > /etc/apache2/sites-available/wise.c01.com.conf
 
 # touch /var/www/wise.c01.com/.htaccess
 
@@ -27,5 +35,5 @@ cat conf_apache.txt > /etc/apache2/sites-available/000-default.conf
 
 
 a2enmod rewrite
-
+a2ensite wise.c01.com
 service apache2 start
