@@ -26,8 +26,8 @@ then
     mv /var/www/eden.wise /var/www/eden.wise.c01.com
 fi
 
-touch /etc/apache2/sites-available/wise.c01.conf
-touch /etc/apache2/sites-available/eden.wise.c01.conf
+touch /etc/apache2/sites-available/wise.c01.com.conf
+touch /etc/apache2/sites-available/eden.wise.c01.com.conf
 
 cat conf_wise.txt > /etc/apache2/sites-available/wise.c01.com.conf
 
@@ -42,4 +42,5 @@ a2enmod rewrite
 a2enmod proxy
 a2enmod proxy_http
 a2ensite wise.c01.com
+a2ensite eden.wise.c01.com
 service apache2 start
