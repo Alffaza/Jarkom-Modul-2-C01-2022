@@ -11,8 +11,8 @@
 	#ServerName www.example.com
 	<Directory /var/www/wise.c01.com>
 		Options Indexes FollowSymLinks MultiViews
-        AllowOverride All
-        Require all granted
+		AllowOverride All
+		Require all granted
 	</Directory>
 
 	ServerAdmin webmaster@localhost

@@ -9,14 +9,14 @@
 	# value is not decisive as it is used as a last resort host regardless.
 	# However, you must set it for any further virtual host explicitly.
 	#ServerName www.example.com
-    <Directory /var/www/eden.wise.c01.com/public>
-        Options +Indexes
-    </Directory>
-    <Directory /var/www/eden.wise.c01.com>
-        Options Indexes FollowSymLinks MultiViews
-        AllowOverride All
-        Require all granted
-    </Directory>
+	<Directory /var/www/eden.wise.c01.com/public>
+		Options +Indexes
+	</Directory>
+	<Directory /var/www/eden.wise.c01.com>
+		Options Indexes FollowSymLinks MultiViews
+		AllowOverride All
+		Require all granted
+	</Directory>
 
 	ServerAdmin webmaster@localhost
 	DocumentRoot /var/www/eden.wise.c01.com
@@ -24,15 +24,7 @@
 	ServerAlias www.eden.wise.c01.com
 	Alias "/js" "/var/www/eden.wise.c01.com/public/js"
 
-    ErrorDocument 404 /var/www/eden.wise.c01.com/public/error/404.html
-
-
-
-    <Files "/var/www/eden.wise.c01.com/public/error/404.html">
-    <If "-z %{ENV:REDIRECT_STATUS}">
-        RedirectMatch 404 ^/error/404.html$
-    </If>
-    </Files>
+	ErrorDocument 404 /error/404.html
 	
 	# Available loglevels: trace8, ..., trace1, debug, info, notice, warn,
 	# error, crit, alert, emerg.
