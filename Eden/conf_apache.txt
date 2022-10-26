@@ -17,6 +17,7 @@
 
 	ServerAdmin webmaster@localhost
 	DocumentRoot /var/www/wise.c01.com
+	Alias "/home" "/var/www/wise.c01.com/index.php"
 	
 	# Available loglevels: trace8, ..., trace1, debug, info, notice, warn,
 	# error, crit, alert, emerg.

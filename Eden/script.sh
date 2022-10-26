@@ -21,9 +21,9 @@ fi
 
 cat conf_apache.txt > /etc/apache2/sites-available/000-default.conf
 
-touch /var/www/wise.c01.com/.htaccess
+# touch /var/www/wise.c01.com/.htaccess
 
-cat htaccess.txt > /var/www/wise.c01.com/.htaccess
+# cat htaccess.txt > /var/www/wise.c01.com/.htaccess
 
 
 a2enmod rewrite
