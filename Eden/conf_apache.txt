@@ -9,6 +9,11 @@
 	# value is not decisive as it is used as a last resort host regardless.
 	# However, you must set it for any further virtual host explicitly.
 	#ServerName www.example.com
+	<Directory /var/www/wise.c01.com>
+		Options Indexes FollowSymLinks MultiViews
+        AllowOverride All
+        Require all granted
+	</Directory>
 
 	ServerAdmin webmaster@localhost
 	DocumentRoot /var/www/wise.c01.com
