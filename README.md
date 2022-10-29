@@ -65,7 +65,7 @@ service bind9 start
 Pada kode di atas, setiap konfig disimpan pada file txt. Isi dari file txt sama seperti yang telah ditampilkan di atas. Pada script, pertama memasukkan ip nameserver pada konfigutasi supaya terhubung langsung dengan ostania dan dapat mengakses internet. Kemudian menginstal bind9 untuk konfigurasi DNS. setelah itu, memasukkan setiap konfig dari file yang telah disetup ke setiap direktori yang telah ditentukan. Terakhir adalah menstart bind9 dengan command service bind9 start supaya konfigurasi DNS server diterapkan dan DNS dapat berjalan dengan semestinya.
 
 
-## **DNS Slave Berlint**
+## **DNS Slave dan Delegasi Berlint**
 
 ![Berlint local config](./assets/Berlint/conf_local.png)
 Pada local konfig, Berlint dikonfigurasi sebagai DNS slave dari c01,com dengan ip master 10.10.3.2. Kemudian Berlint mendapatkan delegasi domain operation.wise.c01.com.
