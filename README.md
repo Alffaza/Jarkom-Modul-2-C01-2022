@@ -101,3 +101,11 @@ cat /root/conf_options.txt > /etc/bind/named.conf.options
 service bind9 start
 ```
 Inti dari script Berlint sama dengan Wise. Perbedaannya adalah Berlint sebagai DNS slave dan mendapatkan delegasi sehingga file confignya sediki berbeda denan wise.
+
+## Tambahan
+
+Kesulitan: Tidak Ada
+
+Selesai Praktikum: no 1-13
+
+Selesai Revisi: no 14-17
