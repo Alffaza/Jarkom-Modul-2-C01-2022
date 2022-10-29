@@ -13,6 +13,6 @@ chmod +x /root/script.sh
 
 - Berlint akan dijadikan DNS Slave, dan Eden akan digunakan sebagai Web Server
 
-- Terdapat 2 Client yaitu SSS, dan Garden.
+- Terdapat 2 Client yaitu SSS dan Garden.
 
 - Semua node terhubung pada router Ostania, sehingga dapat mengakses internet.
